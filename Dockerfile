@@ -1,3 +1,3 @@
 FROM openjdk:17
-ADD target/dockerJenkins-0.0.1-SNAPSHOT.jar app.jar
-ENTRYPOINT ["java","-jar","app.jar"]
+ADD target/dockerJenkins-0.0.1-SNAPSHOT.jar dockerJenkins.jar
+ENTRYPOINT ["java","-jar","dockerJenkins.jar"]
